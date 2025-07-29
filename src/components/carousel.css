@@ -1,0 +1,52 @@
+/*.carousel_container{
+    display: flex;
+}*/
+
+#window {
+  background-color: white;
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+#window:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#text {
+  margin-top: 12px;
+}
+
+#OlipopName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+#button {
+  margin-top: 14px;
+}
+
+#price {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

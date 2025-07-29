@@ -1,0 +1,42 @@
+.nav-parts {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  padding: 10px;
+  padding-left: 80px;
+  font-family: monospace;
+  border-bottom: 2px solid rgb(8, 68, 68);
+  font-size: 1rem;
+}
+
+.nav-parts img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(8, 68, 68);
+  font-weight: 700;
+}
+
+.nav-parts button {
+  background-color: rgb(8, 68, 68);
+  padding: 10px;
+  color: #ffff;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 8%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

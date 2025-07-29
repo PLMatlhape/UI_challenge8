@@ -1,0 +1,130 @@
+.footer {
+  background-color: #f5fcff;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  width: 250px;
+}
+
+.subscribe-section h4 {
+  color: rgb(8, 68, 68);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.subscribe-section input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.subscribe-section button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(8, 68, 68);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subscribe-section button:hover {
+  background-color: rgb(6, 50, 50);
+}
+
+/* Flavors and Info Sections */
+.flavors-section,
+.info-section {
+  width: 180px;
+}
+
+.flavors-section h4,
+.info-section h4 {
+  color: rgb(8, 68, 68);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.flavors-section ul,
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flavors-section li,
+.info-section li {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Social Media Section */
+.social-section {
+  width: 120px;
+}
+
+.social-section h4 {
+  color: rgb(8, 68, 68);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons li {
+  cursor: pointer;
+}
+
+.social-icons svg {
+  color: rgb(8, 68, 68);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .subscribe-section,
+  .flavors-section,
+  .info-section,
+  .social-section {
+    width: 100%;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
