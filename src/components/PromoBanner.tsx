@@ -1,4 +1,3 @@
-import React from "react";
 import "./promoBanner.css";
 
 export const PromoBanner = () => {

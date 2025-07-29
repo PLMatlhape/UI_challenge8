@@ -11,7 +11,6 @@
   gap: 60px;
 }
 
-/* Subscribe Section */
 .subscribe-section {
   width: 250px;
 }
@@ -50,13 +49,22 @@
   background-color: rgb(6, 50, 50);
 }
 
-/* Flavors and Info Sections */
-.flavors-section,
+.flavors-section {
+  width: 180px;
+}
+
 .info-section {
   width: 180px;
 }
 
-.flavors-section h4,
+.flavors-section h4 {
+  color: rgb(8, 68, 68);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
 .info-section h4 {
   color: rgb(8, 68, 68);
   font-size: 14px;
@@ -65,14 +73,25 @@
   text-transform: uppercase;
 }
 
-.flavors-section ul,
+.flavors-section ul.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .info-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.flavors-section li,
+.flavors-section li.info-section li {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
 .info-section li {
   color: #666;
   font-size: 14px;
@@ -80,7 +99,6 @@
   cursor: pointer;
 }
 
-/* Social Media Section */
 .social-section {
   width: 120px;
 }
@@ -109,21 +127,26 @@
   color: rgb(8, 68, 68);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .footer-sections {
     flex-direction: column;
     gap: 30px;
     text-align: center;
   }
-  
-  .subscribe-section,
-  .flavors-section,
-  .info-section,
+
+  .subscribe-section {
+    width: 100%;
+  }
+  .flavors-section {
+    width: 100%;
+  }
+  .info-section {
+    width: 100%;
+  }
   .social-section {
     width: 100%;
   }
-  
+
   .social-icons {
     justify-content: center;
   }
