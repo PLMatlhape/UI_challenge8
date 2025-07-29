@@ -1,6 +1,6 @@
 import React from 'react'
 
-type CanData {
+type CanData = {
   name: string
   image: string
   buttonTheme: {
