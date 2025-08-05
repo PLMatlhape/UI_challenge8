@@ -38,14 +38,6 @@ export const PromoBanner = () => {
           </div>
         </div>
 
-        <div className="image">
-          <img
-            src="/assets/images/Ginger-Lemon.png"
-            alt="Olipop Ginger Lemon"
-            className="promo-image"
-          />
-        </div>
-
         <div className="perks-column right-perks">
           <div className="perk">
             <h4>
@@ -81,16 +73,39 @@ export const PromoBanner = () => {
         </div>
         </div>
       </div>
+      
+      <ElevatedImage />
+      
+      <PromoContentSubs/>
+        
+    </div>
+  );
+};
 
-      <div className="promo-content">
-        <h3>Save 15% with Endless Olipop.</h3>
+export const ElevatedImage = () => {
+  return (
+    <div className="elevated-image-container">
+      <img
+        src="/assets/images/Ginger-Lemon.png"
+        alt="Olipop Ginger Lemon"
+        className="elevated-promo-image"
+      />
+    </div>
+  );
+};
+
+export const PromoContentSubs = () => {
+  return (
+    <div className="promo-content">
+      
+      <h3>Save 15% with Endless Olipop.</h3>
         <p>
           Never run out of your favorite flavors when you join our fam.
           Subscribe and save on every order — your wallet (and digestion) will
           thank you.
         </p>
         <button className="subscribe-btn">Subscribe & Save</button>
-      </div>
+      
     </div>
   );
 };

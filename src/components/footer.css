@@ -1,95 +1,104 @@
 .footer {
-  background-color: #f8feff;
-  padding: 6% 0;
+  background-color: white;
+  padding: 3% 0;
   width: 100vw;
   margin: 0;
   margin-left: calc(-50vw + 50%);
   box-sizing: border-box;
 }
 
-.footer-sections {
-  display: flex;
-  justify-content: space-between;
-  gap: 6%;
-  flex-wrap: wrap;
+.footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 1%;
   box-sizing: border-box;
 }
 
-.subscribe-section {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+.footer-sections {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 5%;
+  flex-wrap: wrap;
 }
 
-.subscribe-section h4 {
+.subscribe-section,
+.flavors-section,
+.info-section,
+.social-section {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.section-content {
+  padding: 0 15px;
+  text-align: left;
+}
+
+.subscribe-section h4,
+.flavors-section h4,
+.info-section h4,
+.social-section h4 {
   color: rgb(8, 68, 68);
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(16px, 3vw, 19px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 
 .subscribe-section input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 18px 20px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  font-size: clamp(13px, 2.2vw, 15px);
-  margin-bottom: 12px;
+  font-size: clamp(16px, 3vw, 18px);
+  margin-bottom: 16px;
   box-sizing: border-box;
   background-color: #fff;
 }
 
 .subscribe-section button {
   width: 100%;
-  padding: 14px 16px;
+  padding: 18px 20px;
   background-color: rgb(8, 68, 68);
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 
 .subscribe-section button:hover {
   background-color: rgb(6, 50, 50);
 }
 
-.flavors-section {
-  flex: 1;
-  min-width: 180px;
-  max-width: 200px;
-}
-
+.flavors-section,
 .info-section {
-  flex: 1;
   min-width: 180px;
-  max-width: 200px;
+  max-width: 220px;
 }
 
 .flavors-section h4 {
   color: rgb(8, 68, 68);
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(15px, 2.8vw, 18px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .info-section h4 {
   color: rgb(8, 68, 68);
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(15px, 2.8vw, 18px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .flavors-section ul,
@@ -102,8 +111,8 @@
 .flavors-section li,
 .info-section li {
   color: #555;
-  font-size: clamp(13px, 2.2vw, 15px);
-  margin-bottom: 12px;
+  font-size: clamp(16px, 3vw, 18px);
+  margin-bottom: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
   line-height: 1.4;
@@ -115,18 +124,17 @@
 }
 
 .social-section {
-  flex: 1;
-  min-width: 120px;
-  max-width: 150px;
+  min-width: 160px;
+  max-width: 200px;
 }
 
 .social-section h4 {
   color: rgb(8, 68, 68);
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(15px, 2.8vw, 18px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .social-icons {
@@ -134,7 +142,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 16px;
+  gap: 28px;
   flex-wrap: wrap;
 }
 
@@ -149,23 +157,29 @@
 
 .social-icons svg {
   color: rgb(8, 68, 68);
-  width: clamp(18px, 3.2vw, 22px);
-  height: clamp(18px, 3.2vw, 22px);
+  width: clamp(24px, 4vw, 28px);
+  height: clamp(24px, 4vw, 28px);
 }
 
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .footer {
-    padding: 5% 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    padding: 4% 0;
+  }
+  
+  .footer-content {
+    padding: 0 2%;
   }
   
   .footer-sections {
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .section-content {
     text-align: center;
-    padding: 0 3%;
+    padding: 0 10px;
   }
 
   .subscribe-section,
@@ -173,7 +187,7 @@
   .info-section,
   .social-section {
     min-width: auto;
-    max-width: none;
+    max-width: 400px;
     width: 100%;
   }
 
@@ -185,18 +199,24 @@
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .footer {
-    padding: 4% 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    padding: 3% 0;
+  }
+  
+  .footer-content {
+    padding: 0 1%;
   }
   
   .footer-sections {
-    gap: 35px;
-    padding: 0 2%;
+    gap: 50px;
+  }
+  
+  .section-content {
+    padding: 0 5px;
   }
   
   .subscribe-section input,
   .subscribe-section button {
-    padding: 12px 14px;
+    padding: 16px 18px;
+    font-size: clamp(15px, 4vw, 17px);
   }
 }
