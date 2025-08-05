@@ -6,8 +6,12 @@ export const Footer = () => {
       <div className="footer-content">
         <div className="footer-sections">
           <div className="subscribe-section">
+            
             <div className="section-content">
-              <h4>Stay Connected With OLIPOP</h4>
+              <div className="logo-heading">
+                <img src="/assets/images/Olipop-Logo.png" alt="Logo" />
+                <h4>Stay Connected With OLIPOP</h4>
+              </div>
               <input type="email" placeholder="Enter Your Email" />
               <button>SUBSCRIBE</button>
             </div>

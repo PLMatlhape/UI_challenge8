@@ -48,6 +48,24 @@
   letter-spacing: 0.8px;
 }
 
+.subscribe-section .logo-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.subscribe-section .logo-heading img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.subscribe-section .logo-heading h4 {
+  margin: 0;
+  margin-bottom: 0;
+}
+
 .subscribe-section input {
   width: 100%;
   padding: 18px 20px;

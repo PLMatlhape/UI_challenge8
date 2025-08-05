@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
   padding: 15px 5%;
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 1rem;
   flex-wrap: wrap;
+  
 }
 
 .nav-parts img {
@@ -56,7 +56,6 @@
   transform: translateY(-2px);
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
   .nav-parts {
     flex-direction: column;

@@ -2,27 +2,13 @@ import "./ReadMore.css"
 
 export const ReadMore = () => {
   return (
-    <section id="read-more">
-      <div className="homepart">
-        <div className="highlight">
-          <h1>
-            A New Kind<br />of Soda
-          </h1>
-          <button>Shop OLIPOP</button>
-        </div>
-
-        <div className="homeImage">
-          <img
-            src="/assets/images/Strawberry-vanilla.png"
-            alt="Strawberry"
-          />
-        </div>
-      </div>
+    <div className="read-more">
+      <HomepartTextImage />
 
       <div className="more-container">
         <div className="image">
           <img
-            src="/assets/ingredients.png"
+            src="/assets/images/Introducing_sleek_cans.png"
             alt="Foundational Ingredients"
           />
         </div>
@@ -41,6 +27,28 @@ export const ReadMore = () => {
         <h2>Taste Your Favourite</h2>
         <p>Enjoy our take on the classic flavors you know and love</p>
       </div>
-    </section>
+    </div>
   )
+};
+
+export const HomepartTextImage = () => {
+  return (
+    <div className="homepart">
+      <div className="homepart-inner">
+        <div className="highlight">
+          <h1>
+            A New Kind<br />of Soda
+          </h1>
+          <button>Shop OLIPOP</button>
+        </div>
+
+        <div className="homeImage">
+          <img
+            src="/assets/images/Strawberry-vanilla.png"
+            alt="Strawberry"
+          />
+        </div>
+      </div>
+    </div>
+  );
 };

@@ -74,7 +74,7 @@ export const PromoBanner = () => {
         </div>
       </div>
       
-      <ElevatedImage />
+      {/*<ElevatedImage/> */}
       
       <PromoContentSubs/>
         
@@ -82,17 +82,16 @@ export const PromoBanner = () => {
   );
 };
 
-export const ElevatedImage = () => {
+/*export const ElevatedImage = () => {
   return (
-    <div className="elevated-image-container">
+    <div className="image-container">
       <img
-        src="/assets/images/Ginger-Lemon.png"
-        alt="Olipop Ginger Lemon"
-        className="elevated-promo-image"
+        src="/assets/images/Orange-Squeeze.JPEG"
+        alt="Olipop Orange"
       />
     </div>
   );
-};
+};*/
 
 export const PromoContentSubs = () => {
   return (
