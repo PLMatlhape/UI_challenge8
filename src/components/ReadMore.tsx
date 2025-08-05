@@ -5,14 +5,10 @@ export const ReadMore = () => {
     <section id="read-more">
       <div className="homepart">
         <div className="highlight">
-          <div>
-            <h1>
-              A New Kind<br />of Soda
-            </h1>
-          </div>
-          <div>
-            <button>Shop OLIPOP</button>
-          </div>
+          <h1>
+            A New Kind<br />of Soda
+          </h1>
+          <button>Shop OLIPOP</button>
         </div>
 
         <div className="homeImage">
@@ -23,8 +19,6 @@ export const ReadMore = () => {
         </div>
       </div>
 
-
-
       <div className="more-container">
         <div className="image">
           <img
@@ -33,7 +27,7 @@ export const ReadMore = () => {
           />
         </div>
         <div className="text">
-          <h1>Our Foundational Ingredients</h1>
+          <h2>Our Foundational Ingredients</h2>
           <p>
             OLIPOP blends prebiotics, plant fiber, and botanical extracts to
             support digestive health without compromising flavor. Every sip is a
@@ -41,11 +35,10 @@ export const ReadMore = () => {
           </p>
           <button>Read More</button>
         </div>
-
-
       </div>
-      <div className="highlight">
-        <h3>Taste Your Favourite</h3>
+
+      <div className="taste-section">
+        <h2>Taste Your Favourite</h2>
         <p>Enjoy our take on the classic flavors you know and love</p>
       </div>
     </section>

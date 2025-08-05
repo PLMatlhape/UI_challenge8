@@ -1,42 +1,97 @@
 .nav-parts {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20rem;
-  padding: 10px;
-  padding-left: 80px;
-  font-family: monospace;
-  border-bottom: 2px solid rgb(8, 68, 68);
+  gap: 2rem;
+  padding: 15px 5%;
+  font-family: system-ui, -apple-system, sans-serif;
   font-size: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-parts img {
   height: 50px;
   width: 50px;
+  flex-shrink: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 10rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
   color: rgb(8, 68, 68);
-  font-weight: 700;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(6, 50, 50);
 }
 
 .nav-parts button {
   background-color: rgb(8, 68, 68);
-  padding: 10px;
-  color: #ffff;
-  border: 2px solid black;
-  border-radius: 20px;
-  width: 8%;
-  height: 30px;
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  min-width: 120px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-weight: 600;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-parts button:hover {
+  background-color: rgb(6, 50, 50);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-parts {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 15px 5%;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  
+  .nav-parts button {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-parts {
+    padding: 10px 3%;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-parts img {
+    height: 40px;
+    width: 40px;
+  }
 }

@@ -1,48 +1,61 @@
 .footer {
-  background-color: #f5fcff;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #f8feff;
+  padding: 6% 0;
+  width: 100vw;
+  margin: 0;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
 }
 
 .footer-sections {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 6%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  box-sizing: border-box;
 }
 
 .subscribe-section {
-  width: 250px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .subscribe-section h4 {
   color: rgb(8, 68, 68);
-  font-size: 14px;
+  font-size: clamp(13px, 2.2vw, 15px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .subscribe-section input {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-bottom: 10px;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: clamp(13px, 2.2vw, 15px);
+  margin-bottom: 12px;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .subscribe-section button {
   width: 100%;
-  padding: 12px;
+  padding: 14px 16px;
   background-color: rgb(8, 68, 68);
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 14px;
+  border-radius: 6px;
+  font-size: clamp(13px, 2.2vw, 15px);
   font-weight: 700;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 0.5px;
 }
 
 .subscribe-section button:hover {
@@ -50,65 +63,70 @@
 }
 
 .flavors-section {
-  width: 180px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 200px;
 }
 
 .info-section {
-  width: 180px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 200px;
 }
 
 .flavors-section h4 {
   color: rgb(8, 68, 68);
-  font-size: 14px;
+  font-size: clamp(13px, 2.2vw, 15px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .info-section h4 {
   color: rgb(8, 68, 68);
-  font-size: 14px;
+  font-size: clamp(13px, 2.2vw, 15px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.flavors-section ul.info-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+.flavors-section ul,
 .info-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.flavors-section li.info-section li {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 8px;
+.flavors-section li,
+.info-section li {
+  color: #555;
+  font-size: clamp(13px, 2.2vw, 15px);
+  margin-bottom: 12px;
   cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1.4;
 }
 
-.info-section li {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 8px;
-  cursor: pointer;
+.flavors-section li:hover,
+.info-section li:hover {
+  color: rgb(8, 68, 68);
 }
 
 .social-section {
-  width: 120px;
+  flex: 1;
+  min-width: 120px;
+  max-width: 150px;
 }
 
 .social-section h4 {
   color: rgb(8, 68, 68);
-  font-size: 14px;
+  font-size: clamp(13px, 2.2vw, 15px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .social-icons {
@@ -116,38 +134,69 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .social-icons li {
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons li:hover {
+  transform: scale(1.1);
 }
 
 .social-icons svg {
   color: rgb(8, 68, 68);
+  width: clamp(18px, 3.2vw, 22px);
+  height: clamp(18px, 3.2vw, 22px);
 }
 
+/* Tablet responsiveness */
 @media (max-width: 768px) {
+  .footer {
+    padding: 5% 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
   .footer-sections {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     text-align: center;
+    padding: 0 3%;
   }
 
-  .subscribe-section {
-    width: 100%;
-  }
-  .flavors-section {
-    width: 100%;
-  }
-  .info-section {
-    width: 100%;
-  }
+  .subscribe-section,
+  .flavors-section,
+  .info-section,
   .social-section {
+    min-width: auto;
+    max-width: none;
     width: 100%;
   }
 
   .social-icons {
     justify-content: center;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .footer {
+    padding: 4% 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .footer-sections {
+    gap: 35px;
+    padding: 0 2%;
+  }
+  
+  .subscribe-section input,
+  .subscribe-section button {
+    padding: 12px 14px;
   }
 }

@@ -1,109 +1,220 @@
-.homepart{
-    background-color: rgb(239, 218, 179);
-    padding: 10px;
+.homepart {
+    background-color: #f5d5c3;
+    padding: 80px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 40%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    gap: 60px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.highlight{
-    display: flex;
-    flex-direction: column;
+.highlight {
+    flex: 1;
+    max-width: 500px;
 }
 
-.highlight h1{
-    font-size: 4rem;
-    color:  rgb(8, 68, 68);
+.highlight h1 {
+    font-size: 3.5rem;
+    color: #2c5548;
     font-weight: 900;
-    font-family: 
-
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
 }
 
-.highlight button{
-    background-color: rgb(8, 68, 68);
-    padding: 10px;
-    color: #ffff;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 48%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+.highlight button {
+    background-color: #2c5548;
+    padding: 16px 32px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.homeImage{
-    background-color: rgb(250, 110, 110);
-    padding: 100px;
+.highlight button:hover {
+    background-color: #1f3d32;
+    transform: translateY(-2px);
+}
+
+.homeImage {
+    background-color: #ff6b35;
+    padding: 60px;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 320px;
+    width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+}
+
+.homeImage img {
+    width: 180px;
+    height: 240px;
+    object-fit: contain;
 }
 
 .more-container {
     display: flex;
-    gap: 10%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    width: 70%;
-    margin-left: 16%;
-    margin-top: 50px;
-    padding: 20px;
-    padding-bottom: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.more-container h1{
-    color: rgb(8, 68, 68);
-}
-
-.more-container p{
-    color: rgb(8, 68, 68);
-}
-
-.more-container img{
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.homeImage img{
-    width: 150px;
-    height: 200px;
+.more-container .image {
+    flex: 0 0 300px;
 }
 
-.more-container button{
-    background-color: rgb(8, 68, 68);
-    padding: 10px;
-    color: #ffff;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 15%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+.more-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.highlight h3{
+.more-container .text {
+    flex: 1;
+}
+
+.more-container h2 {
+    color: #2c5548;
     font-size: 2rem;
-    color:  rgb(8, 68, 68);
-    font-weight: 900;
-    text-align: center;
-    margin-top: 100px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
 }
 
-.highlight p{
-    font-size: 1rem;
-    color:  rgb(8, 68, 68);
-    /* font-weight: 900; */
+.more-container p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.more-container button {
+    background-color: #2c5548;
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-container button:hover {
+    background-color: #1f3d32;
+    transform: translateY(-2px);
+}
+
+.taste-section {
     text-align: center;
-    margin-top: -20px;
+    margin: 80px auto 40px;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.taste-section h2 {
+    font-size: 2.5rem;
+    color: #2c5548;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+}
+
+.taste-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .homepart {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .highlight h1 {
+        font-size: 2.5rem;
+    }
+
+    .homeImage {
+        height: 250px;
+        width: 250px;
+        padding: 40px;
+    }
+
+    .homeImage img {
+        width: 140px;
+        height: 180px;
+    }
+
+    .more-container {
+        flex-direction: column;
+        margin: 60px 20px;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .more-container .image {
+        flex: none;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .more-container h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .more-container p {
+        text-align: center;
+    }
+
+    .taste-section {
+        margin: 60px auto 30px;
+    }
+
+    .taste-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepart {
+        padding: 40px 15px;
+    }
+
+    .highlight h1 {
+        font-size: 2rem;
+    }
+
+    .homeImage {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+    }
+
+    .homeImage img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .more-container {
+        margin: 40px 15px;
+        padding: 20px 15px;
+    }
+
+    .taste-section h2 {
+        font-size: 1.8rem;
+    }
 }

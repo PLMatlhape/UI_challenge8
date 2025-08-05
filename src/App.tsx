@@ -15,34 +15,34 @@ function App() {
         <div className='carousel_container'>
           <Carousel
             cans={{
-              name: 'Ginger-Lemon',
+              name: 'Ginger Lemon',
               image: '/assets/images/Ginger-Lemon.png',
-              backgroundColor: "tan",
-              buttonTheme: { text: '$35.99', color: "gold" },
+              backgroundColor: "#e6d99c",
+              buttonTheme: { text: '$35.99', color: "#f9c74f" },
             }}
           />
           <Carousel
             cans={{
-              name: 'Classic-Grape',
+              name: 'Classic Grape',
               image: '/assets/images/Classic-Grape.png',
-              backgroundColor: "lavender",
-              buttonTheme: { text: '$33.99', color: "purple" },
+              backgroundColor: "#c5a5d4",
+              buttonTheme: { text: '$33.99', color: "#9d4edd" },
             }}
           />
           <Carousel
             cans={{
-              name: 'Orange-Squeeze',
+              name: 'Orange Squeeze',
               image: '/assets/images/Orange-Squeeze.png',
-              backgroundColor: "tan",
-              buttonTheme: { text: '$37.99', color: "orange" },
+              backgroundColor: "#f4c2a1",
+              buttonTheme: { text: '$37.99', color: "#ff8500" },
             }}
           />
           <Carousel
             cans={{
-              name: 'Tropical-Punch',
+              name: 'Tropical Punch',
               image: '/assets/images/Tropical-Punch.png',
-              backgroundColor: "aqua",
-              buttonTheme: { text: '$36.99', color: "red" },
+              backgroundColor: "#a8dadc",
+              buttonTheme: { text: '$36.99', color: "#e63946" },
             }}
           />
         </div>

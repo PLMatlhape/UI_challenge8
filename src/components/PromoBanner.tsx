@@ -4,7 +4,8 @@ export const PromoBanner = () => {
   return (
     <div className="promo-banner">
       <div className="promo-perks">
-        <div className="perks-column left-perks">
+        <div className="perks-content-wrapper">
+          <div className="perks-column left-perks">
           <div className="perk">
             <h4>
               <svg
@@ -37,11 +38,13 @@ export const PromoBanner = () => {
           </div>
         </div>
 
-        <img
-          src="/Ginger_Lemon.png"
-          alt="Olipop Ginger Lemon"
-          className="promo-image"
-        />
+        <div className="image">
+          <img
+            src="/assets/images/Ginger-Lemon.png"
+            alt="Olipop Ginger Lemon"
+            className="promo-image"
+          />
+        </div>
 
         <div className="perks-column right-perks">
           <div className="perk">
@@ -75,6 +78,7 @@ export const PromoBanner = () => {
             </h4>
             <p>Swap, skip or cancel any time</p>
           </div>
+        </div>
         </div>
       </div>
 
